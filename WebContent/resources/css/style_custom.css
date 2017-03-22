@@ -1,0 +1,1582 @@
+/*
+	Style Sheet for Global Ocean Freight. 
+	
+	Copyright 2016 Nippon Express Co., Ltd. All rights reserved.
+*/
+button {
+	width: 90px;
+}
+.helper-button {
+	width: 40px;
+}
+.month-button {
+	width: 40px;
+}
+.week-button {
+	width: 40px;
+}
+.map-button {
+	width: 60px;
+}
+.add-button {
+	white-space: nowrap;
+	font-size: 1.1em;
+	height: 18.5px;
+	width: 50px;
+}
+.del-button {
+	white-space: nowrap;
+	font-size: 1.1em;
+	height: 18.5px;
+	width: 50px;
+}
+.link-block-style {
+	width: 100%;
+	float: left;
+}
+.link-style {
+	float: left;
+	color: #800000;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-right: 30px;
+}
+/*
+	Label uniform size.
+*/
+.uniform-size-lbl {
+	width: 100px;
+}
+/*
+	Label white-space-nowrap.
+*/
+.nowrap-lbl {
+	height: 18px;
+	white-space: nowrap;
+}
+.gross-weight-volume-lbl {
+	width: 300px;
+}
+/*
+	Horizontal space.
+*/
+.horizontal-space {
+	padding-left: 10px;
+}
+/*
+	Vertical space.
+*/
+.vertical-space {
+	padding-top: 10px;
+}
+/*
+	Reference No. maxlength="10"
+*/
+.reference-no-input {
+	width: 80px;
+}
+/*
+	House B/L No. maxlength="20"
+*/
+.house-b-l-no-input {
+	width: 150px;
+}
+/*
+	Master Ref. maxlength="20"
+*/
+.master-ref-input {
+	width: 150px;
+}
+/*
+	Master B/L No. maxlength="20"
+*/
+.master-b-l-no-input {
+	width: 150px;
+}
+/*
+	Pattern. maxlength="10"
+*/
+.pattern-input {
+	width: 80px;
+}
+/*
+	Copy Ref. maxlength="10"
+*/
+.copy-ref-input {
+	width: 80px;
+}
+/*
+	Customer Code. maxlength="10"
+*/
+.customer-code-input {
+	width: 80px;
+}
+/*
+	Customer Name. maxlength="35"
+*/
+.customer-Name-input {
+	width: 200px;
+}
+/*
+	Customer Name. maxlength="35"
+*/
+.customer-name-input {
+	width: 150px;
+}
+/*
+	Customer Local Name. maxlength="150"
+*/
+.customer-local-name-input {
+	width: 150px;
+}
+/*
+	Person In Charge. maxlength="10"
+*/
+.person-in-charge-code-input {
+	width: 80px;
+}
+/*
+	Operator. maxlength="10"
+*/
+.operator-code-input {
+	width: 80px;
+}
+/*
+	Commodity Code. maxlength="10"
+*/
+.commodity-code-input {
+	width: 80px;
+}
+/*
+	Commodity Name. maxlength="70"
+*/
+.commodity-name-input {
+	width: 150px;
+}
+/*
+	Customer's Ref No. maxlength="10"
+*/
+.customers-ref-no-input {
+	width: 80px;
+}
+/*
+	Shipper Code. maxlength="10"
+*/
+.shipper-code-input {
+	width: 80px;
+}
+/*
+	Shipper Name1. maxlength="40"
+*/
+.shipper-name1-input {
+	width: 300px;
+}
+/*
+	Shipper Name2. maxlength="40"
+*/
+.shipper-name2-input {
+	width: 300px;
+}
+/*
+	Shipper Address1. maxlength="40"
+*/
+.shipper-address1-input {
+	width: 300px;
+}
+/*
+	Shipper Address2. maxlength="40"
+*/
+.shipper-address2-input {
+	width: 300px;
+}
+/*
+	Shipper Address3. maxlength="40"
+*/
+.shipper-address3-input {
+	width: 300px;
+}
+/*
+	Shipper Address4. maxlength="40"
+*/
+.shipper-address4-input {
+	width: 300px;
+}
+/*
+	Consignee Code. maxlength="10"
+*/
+.consignee-code-input {
+	width: 80px;
+}
+/*
+	Consignee Name1. maxlength="40"
+*/
+.consignee-name1-input {
+	width: 300px;
+}
+/*
+	Consignee Name2. maxlength="40"
+*/
+.consignee-name2-input {
+	width: 300px;
+}
+/*
+	Consignee Address1. maxlength="40"
+*/
+.consignee-address1-input {
+	width: 300px;
+}
+/*
+	Consignee Address2. maxlength="40"
+*/
+.consignee-address2-input {
+	width: 300px;
+}
+/*
+	Consignee Address3. maxlength="40"
+*/
+.consignee-address3-input {
+	width: 300px;
+}
+/*
+	Consignee Address4. maxlength="40"
+*/
+.consignee-address4-input {
+	width: 300px;
+}
+/*
+	Notify Code. maxlength="10"
+*/
+.notify-code-input {
+	width: 80px;
+}
+/*
+	Notify Name1. maxlength="40"
+*/
+.notify-name1-input {
+	width: 300px;
+}
+/*
+	Notify Name2. maxlength="40"
+*/
+.notify-name2-input {
+	width: 300px;
+}
+/*
+	Notify Address1. maxlength="40"
+*/
+.notify-address1-input {
+	width: 300px;
+}
+/*
+	Notify Address2. maxlength="40"
+*/
+.notify-address2-input {
+	width: 300px;
+}
+/*
+	Notify Address3. maxlength="40"
+*/
+.notify-address3-input {
+	width: 300px;
+}
+/*
+	Notify Address4. maxlength="40"
+*/
+.notify-address4-input {
+	width: 300px;
+}
+/*
+	Country Code. maxlength="2"
+*/
+.country-code-input {
+	width: 20px;
+}
+/*
+	Country Name. maxlength="20"
+*/
+.country-name-input {
+	width: 150px;
+}
+/*
+	State Code. maxlength="2"
+*/
+.state-code-input {
+	width: 20px;
+}
+/*
+	State Name. maxlength="20"
+*/
+.state-name-input {
+	width: 150px;
+}
+/*
+	City Code. maxlength="3"
+*/
+.city-code-input {
+	width: 30px;
+}
+/*
+	City Name. maxlength="20"
+*/
+.city-name-input {
+	width: 150px;
+}
+/*
+	Zip Code. maxlength="10"
+*/
+.zip-code-input {
+	width: 80px;
+}
+/*
+	Tel No. maxlength="17"
+*/
+.tel-no-input {
+	width: 130px;
+}
+/*
+	Fax No. maxlength="17"
+*/
+.fax-no-input {
+	width: 130px;
+}
+/*
+	EMail. maxlength="50"
+*/
+.emeil-input {
+	width: 360px;
+}
+/*
+	Attn Code. maxlength="40"
+*/
+.attn-code-input {
+	width: 290px;
+}
+/*
+	Fowarding Agent Code. maxlength="10"
+*/
+.fowarding-agent-code-input {
+	width: 80px;
+}
+/*
+	Fowarding Agent Name1. maxlength="40"
+*/
+.fowarding-agent-name1-input {
+	width: 150px;
+}
+/*
+	Fowarding Agent Name2. maxlength="40"
+*/
+.fowarding-agent-name2-input {
+	width: 150px;
+}
+/*
+	Fowarding Agent Address1. maxlength="40"
+*/
+.fowarding-agent-address1-input {
+	width: 150px;
+}
+/*
+	Fowarding Agent Address2. maxlength="40"
+*/
+.fowarding-agent-address2-input {
+	width: 150px;
+}
+/*
+	Fowarding Agent Address3. maxlength="40"
+*/
+.fowarding-agent-address3-input {
+	width: 150px;
+}
+/*
+	Fowarding Agent Address4. maxlength="40"
+*/
+.fowarding-agent-address4-input {
+	width: 150px;
+}
+/*
+	Cargo Release Agent Code. maxlength="10"
+*/
+.cargo-release-agent-code-input {
+	width: 80px;
+}
+/*
+	Cargo Release Agent Name1. maxlength="40"
+*/
+.cargo-release-agent-name1-input {
+	width: 150px;
+}
+/*
+	Cargo Release Agent Name2. maxlength="40"
+*/
+.cargo-release-agent-name2-input {
+	width: 150px;
+}
+/*
+	Cargo Release Agent Address1. maxlength="40"
+*/
+.cargo-release-agent-address1-input {
+	width: 150px;
+}
+/*
+	Cargo Release Agent Address2. maxlength="40"
+*/
+.cargo-release-agent-address2-input {
+	width: 150px;
+}
+/*
+	Cargo Release Agent Address3. maxlength="40"
+*/
+.cargo-release-agent-address3-input {
+	width: 150px;
+}
+/*
+	Cargo Release Agent Address4. maxlength="40"
+*/
+.cargo-release-agent-address4-input {
+	width: 150px;
+}
+/*
+	Booking No. maxlength="20"
+*/
+.booking-no-input {
+	width: 150px;
+}
+/*
+	Carrier Code. maxlength="5"
+*/
+.carrier-code-input {
+	width: 40px;
+}
+/*
+	Carrier Name. maxlength="20"
+*/
+.carrier-name-input {
+	width: 150px;
+}
+/*
+	Shipping agent Code. maxlength="5"
+*/
+.shipping-agent-code-input {
+	width: 40px;
+}
+/*
+	Shipping agent Name. maxlength="20"
+*/
+.shipping-agent-name-input {
+	width: 150px;
+}
+/*
+	Pre Carriage By. maxlength="40"
+*/
+.pre-carriage-by-input {
+	width: 300px;
+}
+/*
+	Vessel(LLOYDS) Code. maxlength="9"
+*/
+.vessel-code-input {
+	width: 75px;
+}
+/*
+	Vessel Name. maxlength="40"
+*/
+.vessel-name-input {
+	width: 150px;
+}
+/*
+	Voy Code. maxlength="12"
+*/
+.voy-code-input {
+	width: 95px;
+}
+/*
+	Place of Receipt Name. maxlength="40"
+*/
+.place-of-receipt-name-input {
+	width: 150px;
+}
+/*
+	Port of Loading Name. maxlength="40"
+*/
+.port-of-loading-name-input {
+	width: 150px;
+}
+/*
+	Port of Discharge Name. maxlength="40"
+*/
+.port-of-discharge-name-input {
+	width: 150px;
+}
+/*
+	Destination CFS Name. maxlength="40"
+*/
+.destination-cfs-name-input {
+	width: 150px;
+}
+/*
+	Reciept CFS Name. maxlength="40"
+*/
+.reciept-cfs-name-input {
+	width: 150px;
+}
+/*
+	Place of Deliverry Name. maxlength="40"
+*/
+.place-of-delivery-name-input {
+	width: 150px;
+}
+/*
+	Final Destination Name. maxlength="40"
+*/
+.final-destination-name-input {
+	width: 150px;
+}
+/*
+	NVO Service Code. maxlength="3"
+*/
+.nvo-service-code-input {
+	width: 30px;
+}
+/*
+	NVO Service Name. maxlength="40"
+*/
+.nvo-service-name-input {
+	width: 150px;
+}
+/*
+	Gross Weight. maxlength="12"
+*/
+.gross-weight-input {
+	width: 95px;
+}
+/*
+	Gross Weight Unit. maxlength="2"
+*/
+.gross-weight-unit-input {
+	width: 20px;
+}
+/*
+	Gross Volume. maxlength="12"
+*/
+.gross-volume-input {
+	width: 95px;
+}
+/*
+	Gross Measurement. maxlength="12"
+*/
+.gross-measurement-input {
+	width: 95px;
+}
+/*
+	Gross Volume Unit. maxlength="2"
+*/
+.gross-volume-unit-input {
+	width: 16px;
+}
+/*
+	Net Weight. maxlength="12"
+*/
+.net-weight-input {
+	width: 95px;
+}
+/*
+	Net Volume. maxlength="12"
+*/
+.net-volume-input {
+	width: 95px;
+}
+/*
+	HS Code. maxlength="10"
+*/
+.hs-code-input {
+	width: 80px;
+}
+/*
+	HS Name. maxlength="70"
+*/
+.hs-name-input {
+	width: 150px;
+}
+/*
+	QTY. maxlength="10"
+*/
+.qty-input {
+	width: 80px;
+}
+/*
+	QTY Unit Code. maxlength="2"
+*/
+.qty-unit-code-input {
+	width: 20px;
+}
+/*
+	QTY Unit Name. maxlength="5"
+*/
+.qty-unit-name-input {
+	width: 50px;
+}
+/*
+	Piece of Org. maxlength="10"
+*/
+.piece-of-org-input {
+	width: 80px;
+}
+/*
+	Piece of Copy. maxlength="10"
+*/
+.piece-of-copy-input {
+	width: 80px;
+}
+/*
+	Prepaid At Name. maxlength="40"
+*/
+.prepaid-at-name-input {
+	width: 150px;
+}
+/*
+	Payable At Name. maxlength="40"
+*/
+.payable-at-name-input {
+	width: 150px;
+}
+/*
+	TRI No. maxlength="14"
+*/
+.tri-no-input {
+	width: 110px;
+}
+/*
+	TRI Name. maxlength="20"
+*/
+.tri-Name-input {
+	width: 150px;
+}
+/*
+	Bonded Area Code. maxlength="10"
+*/
+.bonded-area-code-input {
+	width: 80px;
+}
+/*
+	Bonded Area Name. maxlength="20"
+*/
+.bonded-area-name-input {
+	width: 150px;
+}
+/*
+	Vanning Place Code. maxlength="10"
+*/
+.vanning-place-code-input {
+	width: 80px;
+}
+/*
+	Vanning Place Name. maxlength="20"
+*/
+.vanning-place-name-input {
+	width: 150px;
+}
+/*
+	Customs Broker Marks. maxlength="70"
+*/
+.customs-broker-marks-input {
+	width: 520px;
+}
+/*
+	Consignee Marks. maxlength="70"
+*/
+.consignee-marks-input {
+	width: 520px;
+}
+/*
+	Customs Marks. maxlength="70"
+*/
+.customs-marks-input {
+	width: 520px;
+}
+/*
+	Vanning Code. maxlength="5"
+*/
+.vanning-code-input {
+	width: 40px;
+}
+/*
+	Vanning Name1. maxlength="40"
+*/
+.vanning-name1-input {
+	width: 150px;
+}
+/*
+	Vanning Name2. maxlength="40"
+*/
+.vanning-name2-input {
+	width: 150px;
+}
+/*
+	Vanning Address1. maxlength="40"
+*/
+.vanning-address1-input {
+	width: 150px;
+}
+/*
+	Vanning Address2. maxlength="40"
+*/
+.vanning-address2-input {
+	width: 150px;
+}
+/*
+	Vanning Address3. maxlength="40"
+*/
+.vanning-address3-input {
+	width: 150px;
+}
+/*
+	Vanning Address4. maxlength="40"
+*/
+.vanning-address4-input {
+	width: 150px;
+}
+/*
+	Local Warehouse Code. maxlength="5"
+*/
+.local-warehouse-code-input {
+	width: 40px;
+}
+/*
+	Witness Information1. maxlength="40"
+*/
+.witness-information1-input {
+	width: 300px;
+}
+/*
+	Witness Information2. maxlength="40"
+*/
+.witness-information2-input {
+	width: 300px;
+}
+/*
+	Division Code. maxlength="6"
+*/
+.division-code-input {
+	width: 50px;
+}
+/*
+	Division Name Local. maxlength="30"
+*/
+.division-name-local-input {
+	width: 150px;
+}
+/*
+	Division Name En. maxlength="100"
+*/
+.division-name-en-input {
+	width: 250px;
+}
+/*
+	Routing Of Transportation. maxlength="70"
+*/
+.routing-of-transportation-input {
+	width: 150px;
+}
+/*
+	CY. maxlength="20"
+*/
+.cy-input {
+	width: 150px;
+}
+/*
+	Customer's Reference maxlength="40"
+*/
+.customers-reference-input {
+	width: 300px;
+}
+/*
+	Customer Clearing Agent Name1. maxlength="40"
+*/
+.customs-clearing-agent-name1-input {
+	width: 150px;
+}
+/*
+	Customer Clearing Agent Name1. maxlength="40"
+*/
+.customs-clearing-agent-name2-input {
+	width: 150px;
+}
+/*
+	Customer Clearing Agent Address1. maxlength="40"
+*/
+.customs-clearing-agent-address1-input {
+	width: 150px;
+}
+/*
+	Customer Clearing Agent Address2. maxlength="40"
+*/
+.customs-clearing-agent-address2-input {
+	width: 150px;
+}
+/*
+	Customer Clearing Agent Address3. maxlength="40"
+*/
+.customs-clearing-agent-address3-input {
+	width: 150px;
+}
+/*
+	Customer Clearing Agent Address4. maxlength="40"
+*/
+.customs-clearing-agent-address4-input {
+	width: 150px;
+}
+/*
+	Reciept CFS Country maxlength="2"
+*/
+.reciept-cfs-country-input {
+	width: 16px;
+}
+/*
+	Reciept CFS City maxlength="3"
+*/
+.reciept-cfs-city-input {
+	width: 24px;
+}
+/*
+	Destination CFS Country maxlength="2"
+*/
+.destination-cfs-country-input {
+	width: 16px;
+}
+/*
+	Destination CFS City maxlength="3"
+*/
+.destination-cfs-city-input {
+	width: 24px;
+}
+/*
+	Customs Agent Code. maxlength="10"
+*/
+.customs-agent-code-input {
+	width: 80px;
+}
+/*
+	Customs Agent Name1. maxlength="40"
+*/
+.customs-agent-name1-input {
+	width: 150px;
+}
+/*
+	Customs Agent Name2. maxlength="40"
+*/
+.customs-agent-name2-input {
+	width: 150px;
+}
+/*
+	Customs Agent Address1. maxlength="40"
+*/
+.customs-agent-address1-input {
+	width: 150px;
+}
+/*
+	Customs Agent Address2. maxlength="40"
+*/
+.customs-agent-address2-input {
+	width: 150px;
+}
+/*
+	Customs Agent Address3. maxlength="40"
+*/
+.customs-agent-address3-input {
+	width: 150px;
+}
+/*
+	Customs Agent Address4. maxlength="40"
+*/
+.customs-agent-address4-input {
+	width: 150px;
+}
+/*
+	Port of Loading Country Code maxlength="2"
+*/
+.port-of-loading-country-code-input {
+	width: 16px;
+}
+
+/*
+	Company Name Local. maxlength="30"
+*/
+.company-name-local-input {
+	width: 150px;
+}
+/*
+	Company Name English. maxlength="100"
+*/
+.company-name-en-input {
+	width: 150px;
+}
+/*
+	Branch Name Local. maxlength="30"
+*/
+.branch-name-local-input {
+	width: 150px;
+}
+/*
+	Branch Name English. maxlength="100"
+*/
+.branch-name-en-input {
+	width: 150px;
+}
+/*
+	Import Agent Code. maxlength="5"
+*/
+.import-agent-code-input {
+	width: 40px;
+}
+/*
+	SEQ No. maxlength="10"
+*/
+.seq-no-input {
+	width: 80px;
+}
+/*
+	Container No. maxlength="14"
+*/
+.container-no-input {
+	width: 110px;
+}
+/*
+	Container Group. maxlength="5"
+*/
+.container-group-input {
+	width: 40px;
+}
+/*
+	Container Size. maxlength="2"
+*/
+.container-size-input {
+	width: 20px;
+}
+/*
+	Container Height. maxlength="2"
+*/
+.container-height-input {
+	width: 20px;
+}
+/*
+	Container Type. maxlength="3"
+*/
+.container-type-input {
+	width: 30px;
+}
+/*
+	Tare Weight. maxlength="11"
+*/
+.tare-weight-input {
+	width: 95px;
+}
+/*
+	Tare Weight Unit. maxlength="2"
+*/
+.tare-weight-unit-input {
+	width: 20px;
+}
+/*
+	Nos. of Package. maxlength="11"
+*/
+.nos-of-package-input {
+	width: 80px;
+}
+/*
+	Nos. of Package Unit. maxlength="2"
+*/
+.nos-of-package-unit-input {
+	width: 20px;
+}
+/*
+	Seal No. maxlength="15"
+*/
+.seal-no-input {
+	width: 120px;
+}
+span.house-bl-no-info:after {
+	content: "\025CF";
+	color:red;
+}
+/*
+	Port of Discharge Country maxlength="2"
+*/
+.port-of-discharge-country-input {
+	width: 16px;
+}
+/*
+	Port of Discharge City. maxlength="3"
+*/
+.port-of-discharge-city-input {
+	width: 24px;
+}
+/*
+	Exchange Rate. maxlength="14"
+*/
+.exchange-rate-input {
+	width: 95px;
+}
+/*
+	VOYAGE NUMBER. maxlength="12"
+*/
+.voyage-number-input {
+	width: 95px;
+}STATUS
+/*
+	STATUS. maxlength="10"
+*/
+.status-input {
+	width: 80px;
+}
+/*
+	Cargo Release Contact Name. maxlength="20"
+*/
+.cargo-release-contact-name-input {
+	width: 150px;
+}
+/*
+	B/L Type Name. maxlength="20"
+*/
+.bl-type-name-input {
+	width: 150px;
+}
+/*
+	Issued at Name. maxlength="20"
+*/
+.issued-at-name-input {
+	width: 150px;
+}
+/*
+	YES NO. maxlength="3"
+*/
+.yes-no-input {
+	width: 30px;
+}
+/*
+	Freight. maxlength="5"
+*/
+.freight-input {
+	width: 40px;
+}
+/*
+	Tariff Number. maxlength="10"
+*/
+.tariff-number-input {
+	width: 80px;
+}
+/*
+	Tariff No. maxlength="13"
+*/
+.tariff-no-input {
+	width: 100px;
+}
+/*
+	Person First & Last Name maxlength="106"
+*/
+.person-name-input {
+	width: 400px;
+}
+/*
+	Phone No maxlength="17"
+*/
+.phone-no-input {
+	width: 130px;
+}
+/*
+	Check Number maxlength="10"
+*/
+.check-number-input {
+	width: 80px;
+}
+/*
+	D/O Less No maxlength="10"
+*/
+.do-less-no-input {
+	width: 80px;
+}
+/*
+	Order No. maxlength="10"
+*/
+.order-no-input {
+	width: 80px;
+}
+/*
+	Work Contents. maxlength="3"
+*/
+.work-contents-name-input {
+	width: 30px;
+}
+/*
+	Warehouse Name. maxlength="40"
+*/
+.warehouse-name-input {
+	width: 150px;
+}
+/*
+	Special Instruction. maxlength="300"
+*/
+.special-instruction-input {
+	width: 150px;
+}
+/*
+	DDC Unit Price. maxlength="19"
+*/
+.ddc-unit-price-input {
+	width: 100px;
+}
+/*
+	Ocean Freight Prepaid. maxlength="19"
+*/
+.ocean-freight-prepaid-input {
+	width: 100px;
+}
+/*
+	Ocean Freight Collect. maxlength="19"
+*/
+.ocean-freight-collect-input {
+	width: 100px;
+}
+/*
+	DDC Prepaid. maxlength="19"
+*/
+.ddc-prepaid-input {
+	width: 100px;
+}
+/*
+	DDC Collect. maxlength="19"
+*/
+.ddc-collect-input {
+	width: 100px;
+}
+/*
+	TMF Prepaid. maxlength="19"
+*/
+.tmf-prepaid-input {
+	width: 100px;
+}
+/*
+	TMF Collect. maxlength="19"
+*/
+.tmf-collect-input {
+	width: 100px;
+}
+/*
+	Quotation No. maxlength="10"
+*/
+.qutn-no-input {
+	width: 80px;
+}
+/*
+	MESSIEURS maxlength="50"
+*/
+.mssrs-input {
+	width: 150px;
+}
+
+
+/*
+	Currency. maxlength="3"
+*/
+.currency-input {
+	width: 30px;
+}
+/*
+	Local Currency. maxlength="3"
+*/
+.local-currency-input {
+	width: 30px;
+}
+/*
+	Company Code. maxlength="6"
+*/
+.company-code-input {
+	width: 50px;
+}
+/*
+	Item Code. maxlength="5"
+*/
+.item-code-input {
+	width: 40px;
+}
+/*
+	Price. maxlength="20"
+*/
+.price-input {
+	width: 150px;
+}
+/*
+	Unit. maxlength="3"
+*/
+.unit-input {
+	width: 30px;
+}
+/*
+	Billing Code. maxlength="13"
+*/
+.billing-code-input {
+	width: 100px;
+}
+/*
+	Consolidation Service Code. maxlength="6"
+*/
+.consolidation-service-code-input {
+	width: 50px;
+}
+/*
+	Port of Loading maxlength="5"
+*/
+.portofLoading-code-input {
+	width: 40px;
+}
+/*
+	Port of Discharge maxlength="5"
+*/
+.portofDischarge-code-input {
+	width: 40px;
+}
+/*
+	Descriptopn maxlength="1000"
+*/
+.descriptopn-input {
+	width: 8000px;
+}
+/*
+	Remark. maxlength="50"
+*/
+.remark-input {
+	width: 200px;
+}
+/*
+	Case Mark. maxlength="500"
+*/
+.case-mark-textarea {
+	width: 405px;
+	height: 85px;
+	resize: none;
+	white-space: pre;
+	overflow-y: scroll;
+}
+/*
+	Description. maxlength="1000"
+*/
+.description-textarea {
+	width: 405px;
+	height: 170px;
+	resize: none;
+	white-space: pre;
+	overflow-y: scroll;
+}
+/*
+	Employee maxlength="50"
+*/
+.employee-code-input {
+	width: 200px;
+}
+/*
+	Customer Order No. maxlength="20"
+*/
+.customer-order-no-input {
+	width: 150px;
+}
+/*
+	Work Place Code. maxlength="10"
+*/
+.work-place-code-input {
+	width: 80px;
+}
+/*
+	Worker Code. maxlength="10"
+*/
+.worker-code-input {
+	width: 80px;
+}
+/*
+     Pick Up Place. maxlength="10"
+*/
+.pick-up-place-input {
+	width: 80px;
+}
+/*
+     Delivery Place. maxlength="10"
+*/
+.delivery-place-input {
+	width: 80px;
+}
+/*
+     Transport Company. maxlength="10"
+*/
+.transport-company-input {
+	width: 80px;
+}
+/*
+	Car No/Container No. maxlength="20"
+*/
+.car-no-container-no-input {
+	width: 150px;
+}
+/*
+	Size/Type. maxlength="20"
+*/
+.size-type-input {
+	width: 150px;
+}
+/*
+	Driver. maxlength="20"
+*/
+.driver-input {
+	width: 150px;
+}
+/*
+	Cargo No. maxlength="15"
+*/
+.cargo-no-input {
+	width: 120px;
+}
+/*
+	Sort No. maxlength="5"
+*/
+.sort-no-input {
+	width: 40px;
+}
+/*
+	UN Code. maxlength="4"
+*/
+.un-code-input {
+	width: 40px;
+}
+/*
+	UN Name. maxlength="150"
+*/
+.un-name-input {
+	width: 150px;
+}
+
+
+/*
+ETECH ADDED START
+*/
+input.ui-state-disabled, .ui-widget-content input.ui-state-disabled, .ui-widget-header input.ui-state-disabled {
+    opacity: .8;
+    filter: Alpha(Opacity=35);
+    background-image: none;
+    BACKGROUND-COLOR: #dfdfdf;
+}
+div.ui-state-disabled,.ui-widget-content div.ui-state-disabled, .ui-widget-header div.ui-state-disabled {
+    opacity: .8;
+    filter: Alpha(Opacity=35);
+    background-image: none;
+}
+div.ui-state-disabled label.ui-inputfield{
+    background: #dfdfdf;
+}
+div.ui-chkbox div.ui-state-disabled,div.ui-radiobutton div.ui-state-disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+    background-image: none;
+}
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+    color: #729c10;
+}
+.uppertext {
+	text-transform:uppercase;
+}
+input.int {
+	text-align: right;
+}
+input.float2,input.float3,input.float4,input.float5,input.float6 {
+	text-align: right;
+}
+.ui-autocomplete-panel {
+    position: absolute;
+    overflow: auto;
+	max-height: 300px;
+	max-width: 500px;
+}
+.wordbreak {
+    word-break: break-all;
+	min-width: 50px;
+}
+/*
+	selectOneMenu error class
+*/
+div.ui-selectonemenu.error label {
+	color:black !important;
+	background-color:red !important;
+}
+/*
+	calendar error class
+*/
+span.error.v-date input {
+	background-color:red !important;
+}
+span.error.v-time input {
+ background-color:red !important;
+}
+span.error.v-time5 input {
+ background-color:red !important;
+}
+span.error.v-datetime input {
+ background-color:red !important;
+}
+
+td.cond_dtl div.cond_border{
+	height:16px;
+	margin:1px 2px 1px 2px;
+    padding: 2px 0px 0px 3px;/*top right bottom left*/
+    border: 1px solid #0f1f2c;
+	border-radius: 0.3125em; 
+	-moz-border-radius: 0.3125em; 
+	-webkit-border-radius: 0.3125em; 
+}
+td.cond_dtl div.cond_border span.icon_todo-close{
+    padding: 0px 6px 0px 7px;
+    cursor:pointer;
+/*	background: url("../../resources/images/search-del.gif") no-repeat;*/
+}
+td.cond_dtl div.cond_border span.cond_label{
+	font-weight: bold;
+    /*color:#999999;*/
+}
+td.cond_dtl div.cond_border span.cond_value{
+    /*color:#1576c1;*/
+    padding: 0px 3px 0px 1px;
+}
+/*
+	selectOneMenu error class
+*/
+div.ui-selectonemenu.error label {
+	color:black !important;
+	background-color:red !important;
+}
+/*
+	calendar error class
+*/
+span.error.v-date input {
+	background-color:red !important;
+}
+/*
+ETECH ADDED END
+*/
+
+/*
+	Search Condition Label Style
+*/
+.search-condtion-lbl {
+	width:100px;
+	word-wrap: break-word;
+}
+/*
+	CUSTOMS BROKER CODE maxlength="10"
+*/
+.customs-broker-code-input {
+	width: 80px;
+}
+/*
+	Weight maxlength="13"(11,3)
+*/
+.weight-input {
+	width: 95px;
+}
+/*
+	over size maxlength="13"(11,3)
+*/
+.over-size-input {
+	width: 95px;
+}
+/*
+	Customs Exporter Code maxlength="10"
+*/
+.customs-exporter-code-input {
+	width: 80px;
+}
+/*
+	Custom B/L No. maxlength="20"
+*/
+.custom-b-l-no-input {
+	width: 150px;
+}
+/*
+	Local Bond Area Code. maxlength="5"
+*/
+.local-bond-area-code-input {
+	width: 40px;
+}
+/*
+	Amount. maxlength="20"(15,2)
+*/
+.amount-input {
+	width: 120px;
+}
+/*
+	Floating Insurance Number. maxlength="8"
+*/
+.floating-insurance-number-input {
+	width: 60px;
+}
+/*
+	Comprehension Valuation Number. maxlength="12"
+*/
+.comprehension-valuation-number-input {
+	width: 100px;
+}
+/*
+	Valuation Basic Rate. maxlength="7"(6,3)
+*/
+.valuation-basic-rate-input {
+	width: 50px;
+}
+/*
+	Deferred Payment Number. maxlength="10"
+*/
+.deferred-payment-number-input {
+	width: 80px;
+}
+/*
+	Pick Up Bond Number. maxlength="10"
+*/
+.pick-up-bond-number-input {
+	width: 80px;
+}
+/*
+	Actual Importer. maxlength="10"
+*/
+.actual-importer-input {
+	width: 80px;
+}
+/*
+	IMPORT CY PLACE. maxlength="10"
+*/
+.import-cy-place-input {
+	width: 80px;
+}
+/*
+	DEVANNING PLACE CODE. maxlength="10"
+*/
+.devanning-place-code-input {
+	width: 80px;
+}
+/*
+	Import CY. maxlength="5"
+*/
+.import-cy-input {
+	width: 40px;
+}
+/*
+	IV No. maxlength="20"
+*/
+.iv-no-input {
+	width: 150px;
+}
+/*
+	Package Type. maxlength="2"
+*/
+.package-type-input {
+	width: 20px;
+}
+/*
+	Invoice Sort No. maxlength="3"
+*/
+.invoice-sort-no-input {
+	width: 30px;
+}
+

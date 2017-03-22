@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ejbAction</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!--  
+	<filter>
+		<filter-name>NcuCharacterEncodingFilter</filter-name>
+		<filter-class>jp.co.nittsu.ncu.com.filter.NcuCharacterEncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>NcuCharacterEncodingFilter</filter-name>
+		<servlet-name>Faces Servlet</servlet-name>
+	</filter-mapping>
+  --> 
+  <filter>
+    <filter-name>PrimeFaces FileUpload Filter</filter-name>
+    <filter-class>org.primefaces.webapp.filter.FileUploadFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>PrimeFaces FileUpload Filter</filter-name>
+    <servlet-name>Faces Servlet</servlet-name>
+  </filter-mapping>
+  <context-param>
+    <description>
+		The location where state information is saved.
+Valid values are 'server' (typically saved in HttpSession) and 'client' (typically
+saved as a hidden field in the form.
+Default is server.</description>
+    <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+    <param-value>server</param-value>
+  </context-param>
+  <context-param>
+    <description>
+		Comma-delimited list of context-relative resource paths under which the JSF implementation
+will look for application configuration resources, before loading a configuration resource
+named /WEB-INF/faces-config.xml (if such a resource exists).</description>
+    <param-name>javax.faces.CONFIG_FILES</param-name>
+    <param-value></param-value>
+  </context-param>
+  <context-param>
+    <description>
+		The default suffix for extension-mapped resources that contain JSF components.
+Default is '.jsp'.</description>
+    <param-name>javax.faces.DEFAULT_SUFFIX</param-name>
+    <param-value>.xhtml</param-value>
+  </context-param>
+  <context-param>
+    <description>
+		A human readable string describing where this particular JSF application is
+in the software development lifecycle.
+Valid values are 'Development', 'UnitTest', 'SystemTest' and 'Production'.
+Default is 'Production'.
+This parameter is not available in JSF 1.x.</description>
+    <param-name>javax.faces.PROJECT_STAGE</param-name>
+    <param-value>Development</param-value>
+  </context-param>
+  <context-param>
+    <description></description>
+    <param-name>javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <param-name>javax.faces.FACELETS_SKIP_COMMENTS</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <param-name>primefaces.THEME</param-name>
+    <param-value>#{cookie["NCUPFTHEME"].value==null?"rocket":cookie["NCUPFTHEME"].value}</param-value>
+  </context-param>
+  <context-param>
+    <param-name>javax.faces.FACELETS_BUFFER_SIZE</param-name>
+    <param-value>4000000</param-value>
+  </context-param>
+  <!--  
+  <context-param>
+    <param-name>facelets.LIBRARIES</param-name>
+    <param-value>/WEB-INF/sea.taglib.xml</param-value>
+  </context-param>
+  -->
+  <!-- NFRM-226 20161024 add start -->
+  <context-param> 
+    <param-name>com.sun.faces.numberOfViewsInSession</param-name> 
+    <param-value>100</param-value> 
+  </context-param> 
+  <context-param> 
+    <param-name>com.sun.faces.numberOfLogicalViews</param-name> 
+    <param-value>100</param-value> 
+  </context-param> 
+  <!-- NFRM-226 20161024 add end -->
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>/faces/*</url-pattern>
+  </servlet-mapping>
+  <!--  
+  <filter>
+    <filter-name>NcuSessionCheckFilter</filter-name>
+    <filter-class>jp.co.nittsu.ncu.com.filter.NcuSessionCheckFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>NcuSessionCheckFilter</filter-name>
+    <servlet-name>Faces Servlet</servlet-name>
+  </filter-mapping>
+  
+
+  <filter>
+  	<filter-name>NcuOperationHistory</filter-name>
+  	<filter-class>jp.co.nittsu.ncu.com.filter.NcuOperationHistoryFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>NcuOperationHistory</filter-name>
+  	<servlet-name>Faces Servlet</servlet-name>
+  </filter-mapping>
+
+  <listener>
+    <listener-class>jp.co.nittsu.ncu.com.filter.HttpSessionLifeCycleChecker</listener-class>
+  </listener>
+  	<listener>
+  		<listener-class>jp.co.nittsu.ncu.com.listener.HttpSessionTimeoutListener</listener-class>
+  	</listener>
+	<listener>
+		<listener-class>jp.co.nittsu.ncu.com.listener.ConversationSettingListener</listener-class>
+	</listener>
+	<listener>
+     	<listener-class>jp.co.nittsu.ncu.com.filter.NcuContextListener</listener-class>
+   	</listener>
+  	<listener> 
+   		<listener-class>jp.co.nittsu.ncu.com.listener.ApplicationListener</listener-class> 
+  	</listener>
+  	-->
+</web-app>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ncu="http://nittsu.co.jp/ncu"
+	xmlns:sea="http://nittsu.co.jp/sea"
+	>
+<h:head>
+	<f:facet name="first">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</f:facet>
+	<title>#{title} - v0.0.1</title>
+	
+	<h:outputScript library="primefaces" name="jquery/jquery.js"></h:outputScript>
+	<h:outputScript library="js" name="jquery.validate.js"></h:outputScript>
+	<h:outputScript>
+//<![CDATA[
+(function(){
+	//Basic configurations
+	//Global_Copy_enable=false;
+//]]>
+	</h:outputScript>
+	<script>
+//<![CDATA[
+		var gMode = null;
+		function pageLoaded(){
+			if ($('#mode').get(0) != null) {
+				gMode = $('#mode').val();
+			}
+						
+			if(typeof(afterLoaded)=='function')
+				afterLoaded();
+		}
+		
+		var changeTargets = ["#ssmessages", "#csmessages", "psmessages"];
+		var backState = {};
+		setInterval(function(){
+			for(var i = 0; i < changeTargets.length; i++){
+				var bs = backState[changeTargets[i]];
+				if(bs != $(changeTargets[i]).html()){
+					$(window).trigger("resize");
+				}
+				backState[changeTargets[i]] = $(changeTargets[i]).html();
+			}
+		}, 250);
+//]]>
+	</script>
+	<ui:insert name="htmlHead"></ui:insert>
+	<ui:insert name="extJs"></ui:insert>
+</h:head>
+
+<h:body onload="pageLoaded();">
+	<h:outputStylesheet library="css" name="style_custom.css"></h:outputStylesheet>
+<f:view contentType="text/html; charset=UTF-8">
+<div id="block" style="display:none; background:#c0c0c0; filter:alpha(opacity=50); opacity:0.5; top:0; left:0; right:0; bottom:0; position:fixed; z-index:1000000;"></div>
+
+<h:form id="ncuForm" prependId="false" enctype="#{formEnctype}" onsubmit="return formSubmit();" >
+	<table border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td>
+				<div id="header">
+					<ui:insert name="header" style="width:100%;">
+						<ui:include src="HsHeader.xhtml" />
+					</ui:insert>
+				</div>
+			</td>
+		</tr>
+<!--
+		<tr>
+			<td style="height:5px;"></td>
+		</tr>
+-->
+		<tr>
+			<td>
+				<h:messages id="ssmessages" errorStyle="color: red;"></h:messages>
+				<ul id="csmessages" style="color: red; margin: 0px;"></ul>
+				<ul id="psmessages" style="color: red; margin: 0px;"></ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="head">
+					<!-- HEAD AREA... -->
+					<ui:insert name="head" style="width:100%;">
+					</ui:insert>
+					<!-- ...HEAD AREA -->
+				</div>
+				<div id="registerinfo">
+					<!-- HEAD AREA... -->
+					<ui:insert name="registerinfo" style="width:100%;">
+					</ui:insert>
+					<!-- ...BUTTON TOP AREA -->
+				</div>
+				<div id="headbuttontop">
+					<!-- HEAD AREA... -->
+					<ui:insert name="headbuttontop" style="width:100%;">
+					</ui:insert>
+					<!-- ...BUTTON TOP AREA -->
+				</div>
+				<div id="searchhead">
+					<!-- HEAD AREA... -->
+					<ui:insert name="searchhead" style="width:100%;">
+					</ui:insert>
+					<!-- ...SEARCH HEAD AREA -->
+				</div>
+				<div id="headbuttonbottom">
+					<!-- HEAD AREA... -->
+					<ui:insert name="headbuttonbottom" style="width:100%;">
+					</ui:insert>
+					<!-- ...BUTTON BOTTOM AREA -->
+				</div>
+				<div id="headlink">
+					<!-- HEAD AREA... -->
+					<ui:insert name="headlink" style="width:100%;">
+					</ui:insert>
+					<!-- ...HEAD LINK AREA -->
+				</div>
+			</td>
+		</tr>
+<!--
+		<tr>
+			<td style="height:10px;"></td>
+		</tr>
+-->
+		<tr>
+			<td>
+				<div id="content" style="overflow-x:auto;width:100%" tabindex="-1">
+					<!-- CONTENT AREA... -->
+					<ui:insert name="content">
+				    	Content area.  See comments below this line in the source.
+				    	<!--  include your content file or uncomment the include below and create content.xhtml in this directory -->
+						<!-- <div> -->
+						<!-- <ui:include src="content.xhtml"/> -->
+						<!-- </div> -->
+					</ui:insert>
+					<!-- ...CONTENT AREA -->
+				</div>
+			</td>
+		</tr>
+<!--
+		<tr>
+			<td style="height:20px;"></td>
+		</tr>
+-->
+		<tr>
+			<td class="smallfont commandarea" style="padding:0px;">
+				<div id="command-assist">
+					<!-- COMMAND ASSIST AREA... -->
+					<ui:insert name="command-assist" style="width:100%;">
+					</ui:insert>
+					<!-- ...COMMAND ASSIST AREA -->
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td height="1" class="ui-separator"></td>
+		</tr>
+		<tr>
+			<td class="smallfont commandarea ui-state-default" style="padding:0px;">
+				<div id="command">
+					<!-- COMMAND AREA... -->
+					<ui:insert name="command" style="width:100%;">
+					</ui:insert>
+					<!-- ...COMMAND AREA -->
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td height="1" class="ui-separator"></td>
+		</tr>
+		<tr>
+			<td class="smallfont localcommandarea ui-state-default" style="padding:0px;">
+				<div id="localCommand">
+					<!-- LOCAL COMMAND AREA... -->
+					<!-- ...LOCAL COMMAND AREA -->
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td height="1" class="ui-separator"></td>
+		</tr>
+		<tr>
+			<td class="smallfont footer ui-state-default" style="padding:0px;">
+				<div id="footer">
+					<!-- FOOTER AREA... -->
+					<ui:insert name="footer" style="width:100%;">
+					</ui:insert>
+					<!-- ...FOOTER AREA -->
+				</div>
+			</td>
+		</tr>
+	</table>
+</h:form>
+</f:view>
+</h:body>
+</html>

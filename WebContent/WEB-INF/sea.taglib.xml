@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sea.taglib.xml 1.0.7.0-->
+<facelet-taglib 
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd"
+    version="2.0">
+    
+    <namespace>http://nittsu.co.jp/sea</namespace>
+	<!--  
+    <tag>
+        <tag-name>mandOutputLabel</tag-name>
+        <component>
+             <component-type>jp.co.nittsu.sea.faces.NcuSeaMandatoryOutputLabel</component-type>
+         </component>
+    </tag>
+    
+    -->
+</facelet-taglib>
